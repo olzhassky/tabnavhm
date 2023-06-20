@@ -137,12 +137,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zd9-5D-T8C">
+                                <rect key="frame" x="159" y="576.66666666666663" width="75" height="35.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="тык"/>
+                                <connections>
+                                    <segue destination="6Kg-W9-CgF" kind="show" id="j4r-lw-BSe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xpK-3R-28n"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="zd9-5D-T8C" firstAttribute="leading" secondItem="xpK-3R-28n" secondAttribute="leading" constant="159" id="4vD-fs-UM0"/>
                             <constraint firstItem="PEI-xe-UvG" firstAttribute="centerX" secondItem="NAo-Cj-DRW" secondAttribute="centerX" id="C2c-iF-fbO"/>
+                            <constraint firstItem="zd9-5D-T8C" firstAttribute="top" secondItem="PEI-xe-UvG" secondAttribute="bottom" constant="140.33000000000001" id="L72-fU-6Rq"/>
+                            <constraint firstItem="xpK-3R-28n" firstAttribute="trailing" secondItem="zd9-5D-T8C" secondAttribute="trailing" constant="159" id="eK3-Vf-pj2"/>
                             <constraint firstItem="PEI-xe-UvG" firstAttribute="centerY" secondItem="NAo-Cj-DRW" secondAttribute="centerY" id="mXk-Pg-4tN"/>
+                            <constraint firstItem="xpK-3R-28n" firstAttribute="bottom" secondItem="zd9-5D-T8C" secondAttribute="bottom" constant="157" id="y4R-mi-kYW"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Главная" image="homekit" catalog="system" id="7iW-mj-cK1"/>
@@ -202,6 +214,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NlC-w5-wWb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1413" y="-345"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Vux-lW-V6k">
+            <objects>
+                <viewController id="6Kg-W9-CgF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VGG-Kd-pm2">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="да тут тоже пусто" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l50-lk-cRb">
+                                <rect key="frame" x="125.66666666666669" y="410.66666666666669" width="142" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nEN-dK-8Xa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="l50-lk-cRb" firstAttribute="centerY" secondItem="VGG-Kd-pm2" secondAttribute="centerY" id="DDt-z9-UFo"/>
+                            <constraint firstItem="l50-lk-cRb" firstAttribute="centerX" secondItem="VGG-Kd-pm2" secondAttribute="centerX" id="EGN-qw-rGg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="blp-lx-H0S"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cpw-je-dH3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2110.6870229007632" y="-609.15492957746483"/>
         </scene>
         <!--Профиль-->
         <scene sceneID="ioL-hP-bmn">
